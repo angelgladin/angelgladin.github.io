@@ -1,10 +1,10 @@
 ---
-title: "Interesting Github Repositories"
+title: "Interesting GitHub Repositories"
 date: 2022-12-15T18:41:53-06:00
 draft: false
 ---
 
-# Interesting Github repositories
+# Interesting GitHub repositories
 
 ### [`funsish`](https://github.com/einarwh/funfish)
 
