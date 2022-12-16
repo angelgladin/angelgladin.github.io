@@ -2,3 +2,33 @@ baseURL = 'https://angelgladin.xyz/'
 languageCode = 'en-us'
 title = 'Ángel Gladín'
 theme = "m10c"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  author = "Ángel Gladin"
+  description = "Computer Science | Philosophy | Psyche | ..."
+  avatar = "introspection.png"
+  favicon = "lambda.ico"
+
+  [params.style]
+    darkestColor = "#000000"
+    darkColor = "#4f4f4f"
+    lightColor = "#dcdccc"
+    lightestColor = "#ffffff"
+    primaryColor = "#00ff00"
