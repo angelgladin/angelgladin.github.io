@@ -100,7 +100,7 @@ class Solution {
     TreeNode(nums[mid]).apply {
         left = makeTree(start, mid)
         right = makeTree(mid + 1, end)
-    }
+    } 
     ```
 
 ## Complexity Analysis
