@@ -1,5 +1,5 @@
 ---
-title: "Convert Sorted Arrray to Binary Search Tree"
+title: "Convert Sorted Array to Binary Search Tree"
 date: 2022-12-25T18:37:58-06:00
 draft: false
 math: true
@@ -12,7 +12,7 @@ Language being used.
 
 That's why I decided to write this post.
 
-**This post will go through some [Kotlin](https://kotlinlang.org/) concepts and leveraging the use of [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)**
+**This post will go through some [Kotlin](https://kotlinlang.org/) concepts.
 
 # Understanding the problem
 
@@ -46,9 +46,9 @@ Here's when [**Divide and Conquer**](https://www.geeksforgeeks.org/divide-and-co
 
 These are the steps to follow to create the BST,
 
-1. Let $n$ the size of the array $A$ and $m = n/2$ the index of the middle element, pick $A[m]$ as the __root of the BST[^2]__.
-2. Consider the two following contiguos subarrays; $A[\ldots m-1]$ and $A[m+1 \ldots]$ respectively with $A$ as a $0$-indexed array, the left and right subcontiguous subarrays.
-    * Create the left and right subtrees with $A[\ldots m-1]$ and $A[m+1 \ldots]$ subcontiguous subarrays recursively following the step __(1)__.
+1. Let $n$ the size of the array $A$ and $m = n/2$ the index of the middle element, and pick $A[m]$ as the __root of the BST[^2]__.
+2. Consider the two following contiguous subarrays; $A[\ldots m-1]$ and $A[m+1 \ldots]$ respectively with $A$ as a $0$-indexed array, the left and right sub contiguous subarrays.
+    * Create the left and right subtrees with $A[\ldots m-1]$ and $A[m+1 \ldots]$ sub contiguous subarrays recursively following the step __(1)__.
     * Repeat recursively until an empty subarray is encountered.
 
 The following diagram depicts the idea,
@@ -65,6 +65,7 @@ class Solution {
                 null
             } else {
                 val mid = start + (end - start) / 2
+
                 TreeNode(nums[mid]).apply {
                     left = makeTree(start, mid)
                     right = makeTree(mid + 1, end)

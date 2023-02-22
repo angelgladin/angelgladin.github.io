@@ -10,6 +10,7 @@ draft: false
 - Twitter: [@angelgladin](https://twitter.com/angelgladin)
 - GitHub: [angelgladin](https://github.com/angelgladin)
 - [LinkedIn](https://www.linkedin.com/in/angelgladin/)
+- [HackerNoon](https://hackernoon.com/u/angelgladin)
 
 ## CV
 
